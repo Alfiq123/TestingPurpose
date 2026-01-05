@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Puskesmas Pesantren II - Dinas Kesehatan Kota Kediri</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Poppins:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#10B981", // Emerald 500 - Fresh green commonly used in health
+                        secondary: "#064E3B", // Emerald 900 - Darker contrast
+                        accent: "#3B82F6", // Blue for links/highlights
+                        "background-light": "#F3F4F6", // Gray 100
+                        "background-dark": "#111827", // Gray 900
+                        "surface-light": "#FFFFFF",
+                        "surface-dark": "#1F2937",
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Poppins', 'sans-serif'],
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.5rem",
+                    },
+                },
+            },
+        };
+    </script>
+<style>
+        .gradient-overlay {
+            background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.7));
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-gray-800 dark:text-gray-200 font-sans antialiased transition-colors duration-200">
+<nav class="sticky top-0 z-50 bg-surface-light dark:bg-surface-dark shadow-md border-b border-gray-200 dark:border-gray-700">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between h-20">
+<div class="flex items-center">
+<div class="flex-shrink-0 flex items-center gap-3">
+<div class="h-10 w-10 bg-primary rounded-full flex items-center justify-center text-white font-bold text-xl">
+<span class="material-icons">local_hospital</span>
+</div>
+<div class="flex flex-col">
+<span class="font-display font-bold text-lg text-gray-900 dark:text-white leading-tight">Puskesmas Pesantren II</span>
+<span class="text-xs text-gray-500 dark:text-gray-400">Dinas Kesehatan Kota Kediri</span>
+</div>
+</div>
+</div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary font-medium transition-colors" href="#profil">Profil</a>
+<a class="text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary font-medium transition-colors" href="#layanan">Layanan</a>
+<a class="text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary font-medium transition-colors" href="#inovasi">Inovasi</a>
+<a class="text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary font-medium transition-colors" href="#berita">Berita</a>
+<a class="bg-primary hover:bg-green-600 text-white px-5 py-2 rounded-full font-medium transition-colors shadow-lg shadow-green-500/30" href="#kontak">Hubungi Kami</a>
+</div>
+<div class="flex items-center md:hidden">
+<button class="text-gray-500 hover:text-gray-700 focus:outline-none" type="button">
+<span class="material-icons text-3xl">menu</span>
+</button>
+</div>
+</div>
+</div>
+</nav>
+<div class="relative bg-surface-light dark:bg-surface-dark overflow-hidden">
+<div class="max-w-7xl mx-auto">
+<div class="relative z-10 pb-8 bg-surface-light dark:bg-surface-dark sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
+<main class="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
+<div class="sm:text-center lg:text-left">
+<h1 class="text-4xl tracking-tight font-display font-extrabold text-gray-900 dark:text-white sm:text-5xl md:text-6xl">
+<span class="block xl:inline">Melayani dengan</span>
+<span class="block text-primary">Hati &amp; Profesionalisme</span>
+</h1>
+<p class="mt-3 text-base text-gray-500 dark:text-gray-400 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+                            UPT Puskesmas Pesantren II berkomitmen memberikan pelayanan kesehatan paripurna untuk mencapai masyarakat sehat di wilayah Kota Kediri.
+                        </p>
+<div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start gap-4">
+<div class="rounded-md shadow">
+<a class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-primary hover:bg-green-600 md:py-4 md:text-lg transition-all" href="#jadwal">
+<span class="material-icons mr-2">calendar_today</span>
+                                    Jadwal Layanan
+                                </a>
+</div>
+<div class="mt-3 sm:mt-0 sm:ml-3">
+<a class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-primary bg-green-100 dark:bg-green-900/30 dark:text-green-300 hover:bg-green-200 dark:hover:bg-green-900/50 md:py-4 md:text-lg transition-all" href="#lokasi">
+<span class="material-icons mr-2">place</span>
+                                    Lokasi Kami
+                                </a>
+</div>
+</div>
+</div>
+</main>
+</div>
+</div>
+<div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
+<img alt="Gedung Puskesmas Modern" class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBF6gU3oN6IzXtoe0lwQ-sPSbV7DxH2BU4PAVwbmKncraNUg6CDWerjV87TkwN9ha263D1PZMAbYX92GNc_hnp1MYG2nEinCL12u9als1JOncuPpj8OZ9dGZQvJdH8T7JGceFOSBvyYIEzCTIDInihRX848amo8sUgYVmSjZwM-l_AY0frLQBEGQKxp2AD1f6SKsq7zPqLAGbNhBuxvEY8oYdY9rg2uFHgzIOjLGsdUDHVmTE4_UspZZsK6HU2EBm3qXjq1JEtzmyg"/>
+<div class="absolute inset-0 bg-gradient-to-r from-surface-light dark:from-surface-dark to-transparent lg:via-surface-light/50 lg:dark:via-surface-dark/50"></div>
+</div>
+</div>
+<div class="bg-primary shadow-lg transform -translate-y-8 max-w-6xl mx-auto rounded-xl grid grid-cols-1 md:grid-cols-3 gap-6 p-8 relative z-20 mx-4">
+<div class="flex items-center space-x-4 text-white">
+<div class="p-3 bg-white/20 rounded-full">
+<span class="material-icons text-3xl">schedule</span>
+</div>
+<div>
+<p class="font-bold text-lg">Jam Operasional</p>
+<p class="text-sm opacity-90">Senin - Sabtu: 07:30 - 12:00</p>
+</div>
+</div>
+<div class="flex items-center space-x-4 text-white border-l-0 md:border-l border-white/20 md:pl-6">
+<div class="p-3 bg-white/20 rounded-full">
+<span class="material-icons text-3xl">emergency</span>
+</div>
+<div>
+<p class="font-bold text-lg">Gawat Darurat</p>
+<p class="text-sm opacity-90">Siaga 24 Jam untuk UGD</p>
+</div>
+</div>
+<div class="flex items-center space-x-4 text-white border-l-0 md:border-l border-white/20 md:pl-6">
+<div class="p-3 bg-white/20 rounded-full">
+<span class="material-icons text-3xl">phone</span>
+</div>
+<div>
+<p class="font-bold text-lg">Kontak Darurat</p>
+<p class="text-sm opacity-90">(0354) 696055</p>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 grid grid-cols-1 lg:grid-cols-3 gap-12">
+<div class="lg:col-span-2 space-y-16">
+<section class="scroll-mt-24" id="profil">
+<div class="flex items-center gap-4 mb-6">
+<div class="h-10 w-2 bg-primary rounded-full"></div>
+<h2 class="text-3xl font-display font-bold text-gray-900 dark:text-white">Profil Puskesmas</h2>
+</div>
+<div class="bg-surface-light dark:bg-surface-dark rounded-2xl p-6 shadow-sm border border-gray-100 dark:border-gray-700">
+<img alt="Gedung Puskesmas Tampak Depan" class="w-full h-64 object-cover rounded-xl mb-6 shadow-md" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_sFjC_CIOl4eE2Qa6qnBfkVl2sz9JnyFLivCwbZAgddsxp60ZweiJY8UXv7O8lODBTlR5rszaX_umFc_EmcfKeefvbAemM_7wE2b6ME5b5_eWRHKSlFlnCRkHBrRVUcfjN41d4Ki46ghWm6YvmrlhAuspQKdra_91RE7JtivnV0yBUcJ1SNHG5wihm6izEebX0xrULhsLrVRi7ZmNkI8dzx8wywzi2TYH3Q5G87p4nmAJ22Ld8H3sdk9oQq_eLZYo0V7wV8jFJh8"/>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-sm">
+<div class="space-y-3">
+<div class="flex justify-between border-b border-gray-200 dark:border-gray-700 pb-2">
+<span class="text-gray-500 dark:text-gray-400">Nama Puskesmas</span>
+<span class="font-medium text-gray-900 dark:text-gray-100">UPT PUSKESMAS PESANTREN II</span>
+</div>
+<div class="flex justify-between border-b border-gray-200 dark:border-gray-700 pb-2">
+<span class="text-gray-500 dark:text-gray-400">No. Kode</span>
+<span class="font-medium text-gray-900 dark:text-gray-100">357103002</span>
+</div>
+<div class="flex justify-between border-b border-gray-200 dark:border-gray-700 pb-2">
+<span class="text-gray-500 dark:text-gray-400">Kategori</span>
+<span class="font-medium text-gray-900 dark:text-gray-100">Perkotaan</span>
+</div>
+</div>
+<div class="space-y-3">
+<div class="flex justify-between border-b border-gray-200 dark:border-gray-700 pb-2">
+<span class="text-gray-500 dark:text-gray-400">Jenis Pelayanan</span>
+<span class="font-medium text-gray-900 dark:text-gray-100">Rawat Jalan</span>
+</div>
+<div class="flex justify-between border-b border-gray-200 dark:border-gray-700 pb-2">
+<span class="text-gray-500 dark:text-gray-400">Akreditasi</span>
+<span class="font-medium text-gray-900 dark:text-gray-100">Paripurna</span>
+</div>
+<div class="flex justify-between border-b border-gray-200 dark:border-gray-700 pb-2">
+<span class="text-gray-500 dark:text-gray-400">Tahun Berdiri</span>
+<span class="font-medium text-gray-900 dark:text-gray-100">1978</span>
+</div>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+<div class="bg-gradient-to-br from-green-50 to-emerald-50 dark:from-gray-800 dark:to-gray-800 p-6 rounded-2xl border border-green-100 dark:border-gray-700">
+<div class="flex items-center gap-3 mb-4 text-secondary dark:text-primary">
+<span class="material-icons">visibility</span>
+<h3 class="font-bold text-xl">Visi</h3>
+</div>
+<p class="text-gray-600 dark:text-gray-300 italic text-center text-lg leading-relaxed">
+                            "Terwujudnya Pelayanan Kesehatan Yang Profesional Untuk Mencapai Masyarakat Sehat"
+                        </p>
+</div>
+<div class="bg-surface-light dark:bg-surface-dark p-6 rounded-2xl border border-gray-100 dark:border-gray-700">
+<div class="flex items-center gap-3 mb-4 text-secondary dark:text-primary">
+<span class="material-icons">favorite</span>
+<h3 class="font-bold text-xl">Motto</h3>
+</div>
+<div class="flex flex-col items-center">
+<div class="w-16 h-16 bg-green-100 dark:bg-green-900 rounded-full flex items-center justify-center mb-3">
+<span class="material-icons text-green-600 dark:text-green-400 text-3xl">sentiment_satisfied_alt</span>
+</div>
+<p class="font-display font-bold text-xl text-gray-800 dark:text-white">"Melayani dengan Hati"</p>
+</div>
+</div>
+</div>
+<div class="mt-8 bg-surface-light dark:bg-surface-dark p-6 rounded-2xl border border-gray-100 dark:border-gray-700">
+<div class="flex items-center gap-3 mb-4 text-secondary dark:text-primary">
+<span class="material-icons">task_alt</span>
+<h3 class="font-bold text-xl">Misi</h3>
+</div>
+<ul class="space-y-3">
+<li class="flex items-start">
+<span class="flex-shrink-0 h-6 w-6 rounded-full bg-green-100 dark:bg-green-900 flex items-center justify-center text-green-600 dark:text-green-400 mr-3 mt-0.5 text-sm font-bold">1</span>
+<p class="text-gray-600 dark:text-gray-300">Memberikan pelayanan kesehatan secara komprehensif, berkesinambungan dan bermutu.</p>
+</li>
+<li class="flex items-start">
+<span class="flex-shrink-0 h-6 w-6 rounded-full bg-green-100 dark:bg-green-900 flex items-center justify-center text-green-600 dark:text-green-400 mr-3 mt-0.5 text-sm font-bold">2</span>
+<p class="text-gray-600 dark:text-gray-300">Mendorong kemandirian hidup sehat bagi individu, keluarga dan masyarakat di wilayah kerja UPT Puskesmas Pesantren II.</p>
+</li>
+</ul>
+</div>
+</section>
+<section class="scroll-mt-24" id="layanan">
+<div class="flex items-center gap-4 mb-6">
+<div class="h-10 w-2 bg-primary rounded-full"></div>
+<h2 class="text-3xl font-display font-bold text-gray-900 dark:text-white">Jenis Pelayanan</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="bg-surface-light dark:bg-surface-dark rounded-2xl overflow-hidden shadow-sm border border-gray-100 dark:border-gray-700 hover:shadow-md transition-shadow">
+<div class="bg-blue-50 dark:bg-blue-900/20 p-4 border-b border-blue-100 dark:border-blue-900/30">
+<h3 class="font-bold text-blue-800 dark:text-blue-300 flex items-center gap-2">
+<span class="material-icons">medical_services</span> UKP (Perorangan)
+                            </h3>
+</div>
+<div class="p-4">
+<ul class="space-y-2 text-sm text-gray-600 dark:text-gray-300">
+<li class="flex items-center gap-2"><span class="material-icons text-xs text-primary">circle</span> Ruang Tindakan &amp; Gawat Darurat</li>
+<li class="flex items-center gap-2"><span class="material-icons text-xs text-primary">circle</span> Poli Umum</li>
+<li class="flex items-center gap-2"><span class="material-icons text-xs text-primary">circle</span> Poli Gigi &amp; Mulut</li>
+<li class="flex items-center gap-2"><span class="material-icons text-xs text-primary">circle</span> Poli KIA / KB</li>
+<li class="flex items-center gap-2"><span class="material-icons text-xs text-primary">circle</span> Laboratorium &amp; Farmasi</li>
+<li class="flex items-center gap-2"><span class="material-icons text-xs text-primary">circle</span> Konseling (Gizi, Sanitasi, Remaja)</li>
+</ul>
+</div>
+</div>
+<div class="bg-surface-light dark:bg-surface-dark rounded-2xl overflow-hidden shadow-sm border border-gray-100 dark:border-gray-700 hover:shadow-md transition-shadow">
+<div class="bg-green-50 dark:bg-green-900/20 p-4 border-b border-green-100 dark:border-green-900/30">
+<h3 class="font-bold text-green-800 dark:text-green-300 flex items-center gap-2">
+<span class="material-icons">groups</span> UKM (Masyarakat)
+                            </h3>
+</div>
+<div class="p-4">
+<ul class="space-y-2 text-sm text-gray-600 dark:text-gray-300">
+<li class="flex items-center gap-2"><span class="material-icons text-xs text-primary">circle</span> Promosi Kesehatan</li>
+<li class="flex items-center gap-2"><span class="material-icons text-xs text-primary">circle</span> Kesehatan Lingkungan</li>
+<li class="flex items-center gap-2"><span class="material-icons text-xs text-primary">circle</span> Pencegahan Penyakit (P2)</li>
+<li class="flex items-center gap-2"><span class="material-icons text-xs text-primary">circle</span> Perawatan Kesehatan Masyarakat</li>
+<li class="flex items-center gap-2"><span class="material-icons text-xs text-primary">circle</span> Kesehatan Lansia &amp; Olahraga</li>
+<li class="flex items-center gap-2"><span class="material-icons text-xs text-primary">circle</span> UKS / UKGS</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">
+<img alt="Ruang Tunggu" class="rounded-lg h-32 w-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTDMV4UW79S4YOAmWfJrODu8LFwzGRX29oDCNGuILtWm8WSrccw_ZiEvycerEuQYMk8AeJzqRPlCMIqVeo2yZECyyCrRWOikrdPF7KzEkfD3Gqo4BtYkqOI0qwCbI3XbWvotHj7MkyTYBVbvme_H9NH5KWbrPDm_JJHWnEFMxKFRDu7UaPKtTjTYE4tYHSg2MhrLdZ4G22DCXLrArbe6yfkAO6QhVHr1dcU1fe-M7bJgGh-8cx8qHih_yS8AWA8Y3iqetYeRw29Oo"/>
+<img alt="Pemeriksaan Dokter" class="rounded-lg h-32 w-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1UZKYOk5_OB222riciqvUUYPO99LjMvuY6_SGtz-r08gaoUjmRYuilpYbrXF3uRJqlDhfqM9G3qO5nR4dMZCozOrYSZT0Pv5TbmmsXGQhLBog3_askDGQbm6hmxw9cQ5LS6c30UfljtLeniaQ6wsEGVl6zVUngWRvgskH1k73oj5v4begCPSUDPKBGVFU8boXg_Ad0SNyfBCAbnQlORaEe9bN4QeslvUiqrAhWA3ri4TfsM7cLWP7SgXxptvPkMjm3af3a0dy-U8"/>
+<img alt="Apotek" class="rounded-lg h-32 w-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCsBXhmwLSH4bQ3UHFvO3QL2Lu_sMaavBUOqSLlCQcFHkTW3xsYWUT8nLbfgh_1ItpULHAP_hYLXsJyy4usQB7laZAUToEVO8tpgNzbqRe2sg0Ogj6ZrpywZeCJNNTZ_GQ5dCXAu8tVI0w1QhHHvcDUNeo8XXbQDYnSIiVmgkGe15mS41xoO8TfydvCtZuHGx1XaoDE6ewlhVdf3bC9SicybQJQSfj55K7-Dbf4W2x1AJzUw1vmWlCtcRZHlJRCzemq9Y4pR5pG4pc"/>
+<img alt="Laboratorium" class="rounded-lg h-32 w-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAi_xxVk6BC-OzIIlAB49dY47hvv5-B9hYNfs6nk4Rq1-rEElSSsrPOu0PPAK0NPRwBz9W4KOuysV5yBETj1G9wq-91CxlhPQMW1lUmL4qLe1OhW0XndM-qBqpF-VSwQ8_qsZOQkjs56vMwLcTueJy337fCZE69HZI_clRZEibooptpId2wt08p6hSBWGH3UkWhE-PbPMfr9pSJiV76S6nhbCkHy0ucRajqOyYykMzzhoOLgjNiqGivS9xbB7tQ2dAVov_Fn0UX3Kw"/>
+</div>
+</section>
+<section class="scroll-mt-24" id="inovasi">
+<div class="flex items-center gap-4 mb-6">
+<div class="h-10 w-2 bg-primary rounded-full"></div>
+<h2 class="text-3xl font-display font-bold text-gray-900 dark:text-white">Inovasi Layanan</h2>
+</div>
+<div class="space-y-6">
+<div class="flex flex-col md:flex-row gap-6 bg-surface-light dark:bg-surface-dark p-6 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700">
+<div class="md:w-1/3">
+<div class="bg-orange-100 dark:bg-orange-900/30 text-orange-600 dark:text-orange-400 rounded-xl h-full flex flex-col items-center justify-center p-6 text-center">
+<span class="material-icons text-5xl mb-2">child_friendly</span>
+<h4 class="font-bold">GEMAPASI</h4>
+<p class="text-xs mt-1">Gerakan Masyarakat Peduli ASI Eksklusif</p>
+</div>
+</div>
+<div class="md:w-2/3">
+<h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">GEMAPASI</h3>
+<p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-4">
+                                Inovasi dalam rangka memberikan pelayanan terbaik khususnya pada bayi dan balita untuk mencegah stunting. Masalah stunting adalah permasalahan gizi kronis yang disebabkan kurangnya asupan gizi dalam jangka waktu lama.
+                            </p>
+<a class="text-primary font-medium hover:underline flex items-center gap-1 text-sm" href="#">
+                                Baca Selengkapnya <span class="material-icons text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<div class="flex flex-col md:flex-row gap-6 bg-surface-light dark:bg-surface-dark p-6 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700">
+<div class="md:w-1/3">
+<div class="bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 rounded-xl h-full flex flex-col items-center justify-center p-6 text-center">
+<span class="material-icons text-5xl mb-2">health_and_safety</span>
+<h4 class="font-bold">SATE SEJAGAT</h4>
+<p class="text-xs mt-1">Satgas TBC Siap Menjaga Kesehatan</p>
+</div>
+</div>
+<div class="md:w-2/3">
+<h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">SATE SEJAGAT</h3>
+<p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-4">
+                                TBC adalah penyakit menular yang sangat berbahaya. Inovasi ini membentuk kader khusus dalam menyikapi fenomena TBC di wilayah kerja, membantu screening dan pemantauan pengobatan.
+                            </p>
+<a class="text-primary font-medium hover:underline flex items-center gap-1 text-sm" href="#">
+                                Baca Selengkapnya <span class="material-icons text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+</div>
+<aside class="space-y-8">
+<div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg border-t-4 border-primary p-6">
+<h3 class="text-lg font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2">
+<span class="material-icons text-primary">campaign</span> Pengumuman
+                </h3>
+<ul class="space-y-4">
+<li class="pb-3 border-b border-gray-100 dark:border-gray-700">
+<span class="text-xs font-semibold text-primary uppercase tracking-wider">Terbaru</span>
+<a class="block mt-1 font-medium text-gray-800 dark:text-gray-200 hover:text-primary transition-colors" href="#">
+                            Jadwal Vaksinasi Booster Kedua Bulan Ini
+                        </a>
+<span class="text-xs text-gray-500">2 Hari yang lalu</span>
+</li>
+<li class="pb-3 border-b border-gray-100 dark:border-gray-700">
+<a class="block mt-1 font-medium text-gray-800 dark:text-gray-200 hover:text-primary transition-colors" href="#">
+                            Pelayanan Kesehatan di Poskestren Ngadib
+                        </a>
+<span class="text-xs text-gray-500">5 Hari yang lalu</span>
+</li>
+<li>
+<a class="block mt-1 font-medium text-gray-800 dark:text-gray-200 hover:text-primary transition-colors" href="#">
+                            Sosialisasi Pencegahan DBD
+                        </a>
+<span class="text-xs text-gray-500">1 Minggu yang lalu</span>
+</li>
+</ul>
+</div>
+<div class="bg-surface-light dark:bg-surface-dark rounded-xl shadow-sm p-6 border border-gray-100 dark:border-gray-700">
+<h3 class="text-lg font-bold text-gray-900 dark:text-white mb-4">Kategori Informasi</h3>
+<div class="flex flex-wrap gap-2">
+<a class="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 rounded-full text-xs font-medium hover:bg-primary hover:text-white transition-colors" href="#">Berita Kesehatan</a>
+<a class="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 rounded-full text-xs font-medium hover:bg-primary hover:text-white transition-colors" href="#">Jadwal Dokter</a>
+<a class="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 rounded-full text-xs font-medium hover:bg-primary hover:text-white transition-colors" href="#">Promkes</a>
+<a class="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 rounded-full text-xs font-medium hover:bg-primary hover:text-white transition-colors" href="#">KIA</a>
+<a class="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 rounded-full text-xs font-medium hover:bg-primary hover:text-white transition-colors" href="#">Inovasi</a>
+</div>
+</div>
+<div class="relative rounded-xl overflow-hidden shadow-lg group cursor-pointer">
+<img alt="Customer Service" class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYhg39ItNojdNVgHN9GcKNtY9e9aaBwZkOEiJnN6X0MRJZtbsNTpWruqm4vAzpHPgR2BSdMmSjvbKRldyH27CmeeFlQ-fu94YO3ekQMaXDco9VvzUEMuOP5yWts2XEUFaUxK3LTC5ZO1At2McHXnWo7pZt5NHd4vg7zU_zIVmIvD4uTIgqHgBjKqeRr2JocgeC5CYgmUv3kH8MGyMqwg9VdX0VDxDA0rAf2Qs4aC8C-ly8N06jw51DDQ4g6v2uI4pWJuDK3NMrAaI"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 to-black/20 flex flex-col justify-end p-6">
+<h3 class="text-white font-bold text-xl mb-1">Punya Keluhan?</h3>
+<p class="text-gray-200 text-sm mb-3">Sampaikan kritik dan saran Anda untuk kemajuan pelayanan kami.</p>
+<button class="bg-primary text-white text-sm py-2 px-4 rounded w-fit hover:bg-green-600 transition-colors">
+                        Isi Formulir
+                    </button>
+</div>
+</div>
+<div class="bg-surface-light dark:bg-surface-dark rounded-xl shadow-sm overflow-hidden border border-gray-100 dark:border-gray-700">
+<div class="bg-gray-200 dark:bg-gray-700 h-48 flex items-center justify-center">
+<span class="material-icons text-4xl text-gray-400">map</span>
+<p class="absolute text-gray-500 font-bold">Peta Lokasi</p>
+</div>
+<div class="p-4">
+<p class="text-sm text-gray-600 dark:text-gray-300 flex items-start gap-2">
+<span class="material-icons text-primary text-sm mt-0.5">location_on</span>
+                        Jl. Cendana No. 35, Kediri, Jawa Timur
+                    </p>
+</div>
+</div>
+</aside>
+</div>
+<div class="bg-secondary text-white py-16">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-12">
+<h2 class="text-3xl font-display font-bold">Tata Nilai</h2>
+<div class="w-16 h-1 bg-primary mx-auto mt-4 rounded-full"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+<div class="bg-white/10 p-6 rounded-xl backdrop-blur-sm">
+<div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center mx-auto mb-4 text-white font-bold text-xl">D</div>
+<h3 class="text-xl font-bold mb-2">DISIPLIN</h3>
+<p class="text-gray-300 text-sm">Selalu mentaati peraturan perundang-undangan dan peraturan internal.</p>
+</div>
+<div class="bg-white/10 p-6 rounded-xl backdrop-blur-sm">
+<div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center mx-auto mb-4 text-white font-bold text-xl">A</div>
+<h3 class="text-xl font-bold mb-2">AMANAH</h3>
+<p class="text-gray-300 text-sm">Menjalankan tugas dengan jujur dan penuh tanggung jawab.</p>
+</div>
+<div class="bg-white/10 p-6 rounded-xl backdrop-blur-sm">
+<div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center mx-auto mb-4 text-white font-bold text-xl">P</div>
+<h3 class="text-xl font-bold mb-2">PROFESIONAL</h3>
+<p class="text-gray-300 text-sm">Memberikan pelayanan sesuai kompetensi dan kewenangan serta mematuhi etika.</p>
+</div>
+</div>
+<div class="mt-16 text-center">
+<h3 class="text-2xl font-bold mb-6">MARS PUSKESMAS</h3>
+<div class="max-w-3xl mx-auto bg-white/5 p-8 rounded-xl border border-white/10">
+<p class="italic text-gray-300 leading-relaxed">
+                        "Kami Insan Puskesmas Pesantren Dua, Bertekad tuk mengabdi...<br/>
+                        Wujudkan pelayanan yang berkualitas, Untuk mencapai masyarakat sehat..."
+                    </p>
+<button class="mt-6 text-primary hover:text-white border border-primary hover:bg-primary px-6 py-2 rounded-full transition-all text-sm font-medium">
+<span class="material-icons text-sm align-middle mr-1">play_arrow</span> Putar Lagu
+                    </button>
+</div>
+</div>
+</div>
+</div>
+<footer class="bg-surface-light dark:bg-gray-900 border-t border-gray-200 dark:border-gray-800 pt-16 pb-8" id="kontak">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+<div class="col-span-1 md:col-span-2">
+<div class="flex items-center gap-2 mb-4">
+<div class="h-8 w-8 bg-primary rounded-full flex items-center justify-center text-white">
+<span class="material-icons text-sm">local_hospital</span>
+</div>
+<span class="font-display font-bold text-xl text-gray-900 dark:text-white">Puskesmas Pesantren II</span>
+</div>
+<p class="text-gray-500 dark:text-gray-400 text-sm leading-relaxed max-w-md mb-6">
+                        Memberikan layanan kesehatan terbaik bagi masyarakat dengan fasilitas lengkap dan tenaga medis profesional. Kesehatan Anda adalah prioritas kami.
+                    </p>
+<div class="flex space-x-4">
+<a class="text-gray-400 hover:text-primary transition-colors" href="#"><span class="material-icons">facebook</span></a>
+<a class="text-gray-400 hover:text-primary transition-colors" href="#"><span class="material-icons">camera_alt</span></a> 
+<a class="text-gray-400 hover:text-primary transition-colors" href="#"><span class="material-icons">play_circle</span></a> 
+</div>
+</div>
+<div>
+<h3 class="font-bold text-gray-900 dark:text-white mb-4">Kontak Kami</h3>
+<ul class="space-y-3 text-sm text-gray-500 dark:text-gray-400">
+<li class="flex items-start gap-2">
+<span class="material-icons text-primary text-sm mt-0.5">location_on</span>
+<span>Jl. Cendana No. 35 Kediri<br/>Kode Pos 64132</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-icons text-primary text-sm">call</span>
+<span>(0354) 696055</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-icons text-primary text-sm">email</span>
+<span>pesantren2@gmail.com</span>
+</li>
+</ul>
+</div>
+<div>
+<h3 class="font-bold text-gray-900 dark:text-white mb-4">Tautan Cepat</h3>
+<ul class="space-y-2 text-sm text-gray-500 dark:text-gray-400">
+<li><a class="hover:text-primary transition-colors" href="#">Profil Puskesmas</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Jadwal Dokter</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Standar Pelayanan</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Maklumat Pelayanan</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Dinas Kesehatan Kota Kediri</a></li>
+</ul>
+</div>
+</div>
+<div class="border-t border-gray-200 dark:border-gray-800 pt-8 text-center md:text-left flex flex-col md:flex-row justify-between items-center text-sm text-gray-500 dark:text-gray-400">
+<p>© 2023 UPT Puskesmas Pesantren II Kota Kediri. All rights reserved.</p>
+<div class="flex gap-4 mt-4 md:mt-0">
+<a class="hover:text-gray-900 dark:hover:text-white" href="#">Privacy Policy</a>
+<a class="hover:text-gray-900 dark:hover:text-white" href="#">Terms of Service</a>
+</div>
+</div>
+</div>
+</footer>
+
+</body></html>
